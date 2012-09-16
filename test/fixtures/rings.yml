@@ -1,0 +1,15 @@
+one:
+  twitter_user_id: MyString
+  tweet_created_at: 2012-08-05 09:33:20
+  tweet_id: MyString
+  tweet_text: MyString
+  tweet_lat: MyString
+  tweet_lng: MyString
+
+two:
+  twitter_user_id: MyString
+  tweet_created_at: 2012-08-05 09:33:20
+  tweet_id: MyString
+  tweet_text: MyString
+  tweet_lat: MyString
+  tweet_lng: MyString

@@ -1,0 +1,28 @@
+= form_for @ring do |f|
+  = f.error_messages
+  %p
+    = f.label :twitter_user_id
+    %br
+    = f.text_field :twitter_user_id
+  %p
+    = f.label :tweet_created_at
+    %br
+    = f.datetime_select :tweet_created_at
+  %p
+    = f.label :tweet_id
+    %br
+    = f.text_field :tweet_id
+  %p
+    = f.label :tweet_text
+    %br
+    = f.text_field :tweet_text
+  %p
+    = f.label :lat
+    %br
+    = f.text_field :lat
+  %p
+    = f.label :lng
+    %br
+    = f.text_field :lng
+  %p
+    = f.submit

@@ -1,0 +1,23 @@
+- title "Rings"
+
+%table
+  %tr
+    %th Twitter user
+    %th Tweet created at
+    %th Tweet
+    %th Tweet text
+    %th Lat
+    %th Lng
+  - for ring in @rings
+    %tr
+      %td= ring.twitter_user_id
+      %td= ring.tweet_created_at
+      %td= ring.tweet_id
+      %td= ring.tweet_text
+      %td= ring.lat
+      %td= ring.lng
+      %td= link_to 'Show', ring
+      %td= link_to 'Edit', edit_ring_path(ring)
+      %td= link_to 'Destroy', ring, :confirm => 'Are you sure?', :method => :delete
+
+%p= link_to "New Ring", new_ring_path

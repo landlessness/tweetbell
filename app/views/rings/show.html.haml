@@ -1,0 +1,27 @@
+- title "Ring"
+
+%p
+  %strong Twitter User:
+  = @ring.twitter_user_id
+%p
+  %strong Tweet Created At:
+  = @ring.tweet_created_at
+%p
+  %strong Tweet:
+  = @ring.tweet_id
+%p
+  %strong Tweet Text:
+  = @ring.tweet_text
+%p
+  %strong Lat:
+  = @ring.lat
+%p
+  %strong Lng:
+  = @ring.lng
+
+%p
+  = link_to "Edit", edit_ring_path(@ring)
+  |
+  = link_to "Destroy", @ring, :confirm => 'Are you sure?', :method => :delete
+  |
+  = link_to "View All", rings_path
