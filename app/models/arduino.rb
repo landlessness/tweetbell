@@ -14,17 +14,17 @@ class Arduino
     # wait for connection
     sleep(1)
 
-    # print "How long for notes? "
-    # note_duration = $stdin.gets.chomp.to_f
-    note_duration = 0.05
+    print "How long for notes? "
+    note_duration = $stdin.gets.chomp.to_f
+    # note_duration = 0.05
   
-    # print "How long for rest between rib & bon? "
-    # ribbon_rest_duration = $stdin.gets.chomp.to_f
-    ribbon_rest_duration = 0.1
+    print "How long for rest between rib & bon? "
+    ribbon_rest_duration = $stdin.gets.chomp.to_f
+    # ribbon_rest_duration = 0.3
 
-    # print "How long for rest between bon & farm? "
-    # farm_rest_duration = $stdin.gets.chomp.to_f
-    farm_rest_duration = 0.2
+    print "How long for rest between bon & farm? "
+    farm_rest_duration = $stdin.gets.chomp.to_f
+    # farm_rest_duration = 0.6
     
     # voices = ['Agnes', 'Albert', 'Alex', 'Bad News', 'Bahh', 'Bells', 'Boing', 'Bruce', 'Bubbles', 'Cellos', 'Deranged', 'Fred', 'Good News', 'Hysterical', 'Junior', 'Kathy', 'Pipe Organ', 'Princess', 'Ralph', 'Trinoids', 'Vicki', 'Victoria', 'Whisper', 'Zarvox']
     
@@ -48,7 +48,7 @@ class Arduino
       farm(note_duration)
 
       # `say -v #{voices[count % voices.length]} "#{greeting}"`
-      `say -v Vicki "#{greeting}"`
+      `say -v #{voice} "#{greeting}"`
 
       count += 1
 
